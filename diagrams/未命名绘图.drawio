@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-04-11T13:07:56.436Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34" etag="myJO5VXhy_Sx7OSBMPwO" version="21.1.5" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-04-11T13:09:18.838Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34" etag="jj2YxhY-n-d-8EFQH1iK" version="21.1.5" type="github" pages="4">
   <diagram name="第 1 页" id="juWUoHmqVazksuG_CoBL">
-    <mxGraphModel dx="924" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="1348" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="0WwnzeJDcboaGbobXKBc-2" value="用戶購買書本" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="173" width="800" height="1300" as="geometry">
+        <mxCell id="0WwnzeJDcboaGbobXKBc-2" value="OpenShop" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="340" y="170" width="800" height="1303" as="geometry">
             <mxRectangle x="270" y="100" width="110" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>

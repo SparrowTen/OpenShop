@@ -1,11 +1,3 @@
-## 設定環境
-
-### Vscode Python 虛擬環境
-
-#### 建立虛擬環境
-```
-python -m venv venv
-```
 # OpenShop
 
 ## 設定環境

@@ -4,6 +4,11 @@
 
 ### Vscode Python 虛擬環境
 
+#### 建立虛擬環境
+```
+python -m venv venv
+```
+
 #### 啟動虛擬環境
 ```
 .\venv\Scripts\Activate.ps1

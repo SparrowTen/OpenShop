@@ -38,8 +38,8 @@ DATABASES = {
 
 DEFAULTS_CONF = {
     # 后台站点标题
-    "SITE_HEADER": "BaykeShop",
-    "SITE_TITLE": "BaykeShop",
+    "SITE_HEADER": "OpenShop",
+    "SITE_TITLE": "OpenShop",
     
     # 是否开启后台自定义管理菜单
     "ADMIN_MENUS": True,
@@ -55,7 +55,7 @@ DEFAULTS_CONF = {
     
     "PC_LOGO": "baykeshop",
     
-    "SEARCH_VALUE": "请输入搜索关键字",
+    "SEARCH_VALUE": "請輸入搜索關鍵字",
     
     # 首页楼层数量及分类显示数量
     "HOME_NAV_COUNT": 5,

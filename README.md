@@ -42,8 +42,6 @@ pip install -r .\env\requirements.txt
 
 #### 使用 XAMPP MySQL
 
-### 建立資料庫與使用者
-
 檔案路徑: `framework\baykeshop\conf\default.py`
 
 建議新增 `openshop` 資料庫與 `openshop` 使用者
@@ -61,4 +59,11 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+```
+#### 建立資料庫與使用者
+使用 phpmyadmin 建立資料庫與使用者
+
+#### 創建超級使用者
+```
+python manage.py createsuperuser
 ```

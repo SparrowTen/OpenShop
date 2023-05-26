@@ -3,15 +3,15 @@
 {% load static bayketags %}
 
 {% block title %}
-    支付成功
+    付款成功
 {% endblock %}
 
 {% block breadcrumb %}
 <div class="container">
 	<nav class="breadcrumb is-marginless mt-3 mb-3 is-small" aria-label="breadcrumbs">
 		<ul>
-			<li><a href="{% url 'baykeshop:home' %}">首页</a></li>
-			<li class="is-active"><a href="#" aria-current="page">支付成功</a></li>
+			<li><a href="{% url 'baykeshop:home' %}">首頁</a></li>
+			<li class="is-active"><a href="#" aria-current="page">付款成功</a></li>
 		</ul>
 	</nav>
 </div>
@@ -23,15 +23,15 @@
         <figure class="image is-128x128">
         <img src="{% static 'baykeshop/img/payok.svg' %}">
         </figure>
-        <h1 class=" is-size-3 ">支付成功</h1> 
+        <h1 class=" is-size-3 ">付款成功</h1> 
     </div>
     <div class=" dropdown-divider"></div>
-    <p>订单编号：{{ order_sn }}</p> 
-    <p>实际支付：{{ total_amount }}元</p>
-    <p>收货信息：{{ address }}</p>
-    <p>支付状态：{{ pay_status|paystatus }}</p>
-    <p>支付方式：{{ pay_method|paymethod }}</p>
-    <p>支付时间：{{ pay_time }}</p>
+    <p>訂單編號：{{ order_sn }}</p> 
+    <p>實際付款：{{ total_amount }}元</p>
+    <p>收貨資訊：{{ address }}</p>
+    <p>付款狀態：{{ pay_status|paystatus }}</p>
+    <p>付款方式：{{ pay_method|paymethod }}</p>
+    <p>付款時間：{{ pay_time }}</p>
     <div class=" dropdown-divider"></div>
     {% for sku in baykeordersku_set %}
     <div class="columns">
@@ -58,7 +58,7 @@
 <div class="box is-radiusless">
     <div class=" buttons is-justify-content-center">
     <a class=" button is-success" href="{% url 'baykeshop:menmber-orders-retrieve' id %}">查看订单</a>
-    <a class=" button is-black" href="{% url 'baykeshop:home' %}">返回首页</a>
+    <a class=" button is-black" href="{% url 'baykeshop:home' %}">返回首頁</a>
     </div>
 </div>
 {% endblock %}

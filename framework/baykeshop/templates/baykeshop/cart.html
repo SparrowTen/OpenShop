@@ -2,7 +2,7 @@
 
 {% load i18n static %}
 
-{% block title %}购物车{% endblock %}
+{% block title %}購物車{% endblock %}
 
 {% block extrastyle %}
 <style>
@@ -16,8 +16,8 @@
 <div class="container">
     <nav class="breadcrumb is-marginless mt-3 mb-3 is-small" aria-label="breadcrumbs">
       <ul>
-        <li><a href="{% url 'baykeshop:home' %}">首页</a></li>
-        <li class="is-active"><a href="#" aria-current="page">购物车</a></li>
+        <li><a href="{% url 'baykeshop:home' %}">首頁</a></li>
+        <li class="is-active"><a href="#" aria-current="page">購物車</a></li>
       </ul>
     </nav>
 </div>
@@ -81,21 +81,21 @@
                     <span class="is-size-5 has-text-grey">¥</span>{$ parseFloat(props.row.sku.price * props.row.count).toFixed(2) $}
                 </b-table-column>
                 <b-table-column field="caozuo" label="操作" width="80" v-slot="props">
-                    <button class="delete" @click="delCart(props.row)">删除</button>
+                    <button class="delete" @click="delCart(props.row)">刪除</button>
                 </b-table-column>
 
                 <template #footer>
                     <div class="has-background-light is-flex is-align-items-center is-justify-content-space-between">
                         <div class="has-text-danger-dark ml-3">
-                            已选<span class="is-size-4 pl-2 pr-2">{$ checkedRows.length $}</span>件商品 
+                            已選<span class="is-size-4 pl-2 pr-2">{$ checkedRows.length $}</span>件商品 
                         </div>
                         <div class=" is-flex is-align-items-center has-text-danger-dark ">
-                            <span class="is-size-5">合计：</span> <span class="is-size-3 pr-5">¥ {$ total $}</span>
+                            <span class="is-size-5">合計：</span> <span class="is-size-3 pr-5">¥ {$ total $}</span>
                             <button 
                                 class="button is-primary is-radiusless is-large pl-6 pr-6" 
                                 :disabled="checkedRows.length > 0 ? false : true"
                                 @click="cartBuy">
-                                去结算
+                                前往結算
                             </button>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
     </div>
     <div class="has-text-centered has-text-danger is-size-5" v-else> 
         <img src="{% static 'baykeshop/img/noCart1.png' %}">
-        <p> 亲，购物车还是空的哟~ </p>
+        <p>購物車還是空的 (；′⌒`)</p>
         <a class=" button is-primary is-outlined mt-4" href="{% url 'baykeshop:home' %}">继 续 逛</a>
     </div>
 
@@ -122,7 +122,7 @@
             delimiters: ['{$', '$}'],
             data: {
                 cartsData,
-                checkedRows: [],  // 选择的动态
+                checkedRows: [],  // 選擇的動態
                 total:0
             },
             created(){
@@ -133,8 +133,8 @@
                 })
             },
             watch:{
-               // 监听选中商品
-               checkedRows: {
+               // 監聽選取中的商品
+                checkedRows: {
                     handler: function (rows, oldrows) {
                         let total = 0;
                         rows.forEach(row => {
@@ -147,7 +147,7 @@
 
             },
             methods: {
-                // 修改数量
+                // 修改數量
                 updateCartNum(row){
                     request({
                         url: row.detailurl,
@@ -162,10 +162,10 @@
                     })
                 },
 
-                // 删除购物车
+                // 刪除購物車
                 delCart(row){
                     this.$buefy.dialog.confirm({
-                        message: '是否确认删除该购物车商品！',
+                        message: '是否確認刪除購物車內容',
                         cancelText: '取消',
                         onConfirm: () => {
                             request({
@@ -181,14 +181,14 @@
                                             cartNum._data.cartcount = parseInt(cartNum._data.cartcount) - parseInt(row.num)
                                         }
                                     })
-                                    bayke.toastMessage('is-success', '删除成功！')
+                                    bayke.toastMessage('is-success', '刪除成功!')
                                 }
                             })
                         }
                     })
                 },
 
-                // 购物车结算
+                // 購物車結算
                 cartBuy(){
                     let cartids = []
                     this.checkedRows.forEach(el => {

@@ -26,8 +26,8 @@ DATABASES = {
         'NAME': 'openshop',
         'USER': 'openshop',
         'PASSWORD': '9239',
-        'HOST': '',
-        'PORT': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
         # 'OPTIONS': {
         #     'read_default_file': f'{settings.BASE_DIR}/mysql.cnf',
         #     'charset': 'utf8mb4',
@@ -82,7 +82,7 @@ DEFAULTS_CONF = {
     "ALIPAY_PUBLIC_KEY": "baykeshop/payment/alipay/keys/alipay_public_key.pem",
     "ALIPAY_SIGN_TYPE": "RSA2",  # RSA 或者 RSA2
     
-     # tinymce富文本编辑器默认配置
+    # tinymce富文本编辑器默认配置
     # https://www.tiny.cloud/docs/tinymce/6/basic-setup/
     
     "FILE_PATH": "upload/",

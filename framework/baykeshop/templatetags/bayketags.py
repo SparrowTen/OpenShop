@@ -64,13 +64,13 @@ def cartscount(request):
 def paymethod(value):
     v = ""
     if value == 1:
-        v = "货到付款"
+        v = "貨到付款"
     elif value == 2:
-        v = "支付宝"
+        v = "支付寶"
     elif value == 3:
         v = "微信支付"
     elif value == 4:
-        v = "余额支付"
+        v = "餘額支付"
     else:
         v = "待支付"
     return v
@@ -80,13 +80,13 @@ def paymethod(value):
 def paystatus(value):
     s = ''
     if value == 1:
-        s = "待支付"
+        s = "待付款"
     elif value == 2:
-        s = "待发货"
+        s = "待發貨"
     elif value == 3:
-        s = "待收货"
+        s = "待取貨"
     elif value == 4:
-        s = "待评价"
+        s = "待評價"
     elif value == 5:
         s = "已完成"
     elif value == 6:

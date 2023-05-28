@@ -1,13 +1,5 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
-@文件    :user.py
-@说明    :pc user相关视图
-@时间    :2023/05/04 17:22:40
-@作者    :幸福关中&轻编程
-@版本    :1.0
-@微信    :baywanyun
-'''
 
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.views import (
@@ -24,12 +16,12 @@ from baykeshop.forms import LoginForm
 
 
 class LoginView(SuccessMessageMixin, BaseLoginView):
-    """ 登录 """
+    """ 登入 """
     next_page = "/"
     form_class = LoginForm
     redirect_field_name = 'redirect_to'
     template_name = "baykeshop/user/login.html"
-    success_message = "%(username)s 登录成功！"
+    success_message = "%(username)s 登入成功"
 
     def get_success_message(self, cleaned_data):
         return self.success_message % dict(
@@ -44,7 +36,7 @@ class LogoutView(BaseLogoutView):
 
 
 class BaykeRegisterView(BaykeUserRegisterAPIView):
-    """ 用户注册 """
+    """ 用户註冊 """
     renderer_classes = [TemplateHTMLRenderer]
     
     def get(self, request, *args, **kwargs):
@@ -56,14 +48,14 @@ class BaykeUserMenmberView(BaykeUserMenmberViewset):
     renderer_classes = [TemplateHTMLRenderer, ]
     
     def retrieve(self, request, *args, **kwargs):
-        """ 详情 """
+        """ 詳情 """
         response = super().retrieve(request, *args, **kwargs)
         response.template_name = "baykeshop/user/menmber.html"
         response.data['active'] = "menmber"
         return response
     
     def balance(self, request, *args, **kwargs):
-        """ 余额 """
+        """ 餘額 """
         response = super().balance(request, *args, **kwargs)
         response.template_name = "baykeshop/user/balance.html"
         return response

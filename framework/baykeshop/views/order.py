@@ -1,13 +1,5 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
-@文件    :pay.py
-@说明    :
-@时间    :2023/05/04 16:53:15
-@作者    :幸福关中&轻编程
-@版本    :1.0
-@微信    :baywanyun
-'''
 
 from django.urls import reverse
 from django.http.response import HttpResponseRedirect
@@ -22,7 +14,7 @@ from baykeshop.models import BaykeOrder
 
 
 class BaykeOrderConfirmView(BaykeOrderConfirmAPIView):
-    """ 订单确认 """
+    """ 訂單確認 """
     renderer_classes = [TemplateHTMLRenderer, ]
     
     def dispatch(self, request, *args, **kwargs):
@@ -38,7 +30,7 @@ class BaykeOrderConfirmView(BaykeOrderConfirmAPIView):
     
 
 class BaykeOrderPayMethodView(BaykeOrderGeneratedViewset):
-    """ 订单支付，收银台 """
+    """ 訂單支付，收銀台 """
     
     renderer_classes = [TemplateHTMLRenderer, ]
     
@@ -92,7 +84,7 @@ class BaykeAlipayNotifyView(AliPayNotifyAPIView):
     
 
 class BaykeOrderView(BaykeOrderGeneratedViewset):
-    """ 用户中心订单 """
+    """ 用户中心訂單 """
     renderer_classes = [TemplateHTMLRenderer, ]
     
     def list(self, request, *args, **kwargs):

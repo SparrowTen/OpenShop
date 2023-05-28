@@ -1,13 +1,5 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
-@文件    :forms.py
-@说明    :表单
-@时间    :2023/05/01 21:20:28
-@作者    :幸福关中&轻编程
-@版本    :1.0
-@微信    :baywanyun
-'''
 
 from django import forms
 from django.utils.translation import gettext_lazy as _
@@ -22,7 +14,7 @@ class SearchForm(forms.Form):
     
     search = forms.CharField(
         max_length=32, 
-        label="搜索", 
+        label="搜尋", 
         widget=forms.TextInput(
             {
                 'type': 'search', 
@@ -33,12 +25,12 @@ class SearchForm(forms.Form):
 
 
 class LoginForm(AuthenticationForm):
-    """ 登录表单 """
+    """ 登入表單 """
     username = UsernameField(
         widget=forms.TextInput(attrs={
             "autofocus": True, 
             "class": "input", 
-            "placeholder":" 请输入用户名..."
+            "placeholder":" 請輸入用户名..."
         }))
     password = forms.CharField(
         label=_("Password"),
@@ -46,7 +38,7 @@ class LoginForm(AuthenticationForm):
         widget=forms.PasswordInput(attrs={
             "autocomplete": "current-password", 
             "class": "input", 
-            "placeholder":" 请输入密码..."
+            "placeholder":" 請輸入密碼..."
         }),
     )
     

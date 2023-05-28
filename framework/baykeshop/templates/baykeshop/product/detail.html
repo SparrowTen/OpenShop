@@ -11,7 +11,7 @@
 <div class="container">
 	<nav class="breadcrumb is-marginless mt-3 mb-3 is-small" aria-label="breadcrumbs">
 		<ul>
-			<li><a href="{% url 'baykeshop:home' %}">首页</a></li>
+			<li><a href="{% url 'baykeshop:home' %}">首頁</a></li>
             <li>
                 {% for cate in cates %}
                     <a href="{% url 'baykeshop:cate-detail' cate.id %}">{{ cate.name }}</a>
@@ -103,12 +103,12 @@
             <!-- 详情 -->
             <div class="box is-radiusless mt-3">
                 <b-tabs class="block">
-                    <b-tab-item label="商品详情">
+                    <b-tab-item label="商品資訊">
                         <div class="content">
                             {{ content|safe }}
                         </div>
                     </b-tab-item>
-                    <b-tab-item label="商品评价">
+                    <b-tab-item label="商品評價">
                         <div class="is-flex is-justify-content-space-between p-2">
                             <div class="">滿意度：{{ rate }}%</div>
                             <div class="is-flex is-align-items-center">
@@ -141,7 +141,7 @@
                             <p class=" has-text-centered has-text-danger mt-6">還沒有任何評價！</p>
                         {% endfor %}
                     </b-tab-item>
-                    <b-tab-item label="售后服务">
+                    <b-tab-item label="售後服務">
                         <div class="content">
                             {{ after_sale|safe }}
                         </div>

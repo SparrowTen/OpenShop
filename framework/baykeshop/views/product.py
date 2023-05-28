@@ -1,15 +1,5 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
-@文件    :product.py
-@说明    :商品相关视图
-@时间    :2023/04/28 14:00:05
-@作者    :幸福关中&轻编程
-@版本    :1.0
-@微信    :baywanyun
-'''
-
-
 
 from typing import Any
 from django.db.models import Q
@@ -59,7 +49,7 @@ class BaykeProductSPUListView(ListView):
 
 
 class BaykeProductCategoryListView(SingleObjectMixin, BaykeProductSPUListView):
-    """ 点击分类显示商品视图 """
+    """ 點擊分類顯示商品預覽圖 """
     
     model = BaykeProductCategory
     paginate_by = 15
@@ -82,7 +72,7 @@ class BaykeProductCategoryListView(SingleObjectMixin, BaykeProductSPUListView):
     
 
 class BaykeSearchView(BaykeProductSPUListView):
-    """ 搜索视图 """
+    """ 搜詢視圖 """
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['word'] = self.request.GET.get('search')
@@ -97,13 +87,13 @@ class BaykeSearchView(BaykeProductSPUListView):
             queryset = queryset.filter(
                 Q(title__icontains=word)|Q(desc__icontains=word)|Q(keywords__icontains=word)
             )
-            messages.add_message(self.request, messages.SUCCESS, f'共搜索到{queryset.count()}条数据')
+            messages.add_message(self.request, messages.SUCCESS, f'共搜尋到{queryset.count()}條結果')
         f = BaykeProductFilterset(self.request.GET, queryset)
         return f.qs
 
 
 class BaykeProductSPUDetailView(BaykeProductSPUViewSet):
-    """ 商品详情页，继承api接口视图 """
+    """ 商品詳細頁 """
     
     renderer_classes = (renderers.TemplateHTMLRenderer, )
     

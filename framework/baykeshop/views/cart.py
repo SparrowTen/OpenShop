@@ -1,13 +1,5 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
-@文件    :cart.py
-@说明    :PC购物车视图
-@时间    :2023/05/04 14:00:09
-@作者    :幸福关中&轻编程
-@版本    :1.0
-@微信    :baywanyun
-'''
 
 from django.urls import reverse
 from django.http.response import HttpResponseRedirect
@@ -19,12 +11,12 @@ from baykeshop.pagination import PageNumberPagination
 
 
 class BaykeCartPagination(PageNumberPagination):
-    """ 购物车列表分页 """
+    """ 購物車列表分頁 """
     page_size = 50
 
 
 class BaykeCartListView(BaykeCartViewSet):
-    """ 购物车列表 """
+    """ 購物車列表 """
     renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
     pagination_class = BaykeCartPagination
     

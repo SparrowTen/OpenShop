@@ -1,14 +1,5 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
-@文件    :home.py
-@说明    :首页
-@时间    :2023/04/28 13:59:42
-@作者    :幸福关中&轻编程
-@版本    :1.0
-@微信    :baywanyun
-'''
-
 
 from django.views.generic import TemplateView, View
 from django.http.response import JsonResponse
@@ -18,7 +9,7 @@ from baykeshop.models import BaykeProductCategory, BaykeProductSPU
 
 
 class HomeTemplateView(TemplateView):
-    """ 商城首页 """
+    """ 商城首頁 """
     template_name = "baykeshop/index.html"
     
     def get_context_data(self, **kwargs):
@@ -36,7 +27,7 @@ class HomeTemplateView(TemplateView):
 
 
 def has_upload_perm(request, perm_codename=None):
-    # 权限判断方法
+    # 權限判別方法
     perms = [
         request.user.is_authenticated,
         request.user.is_active,
@@ -47,7 +38,7 @@ def has_upload_perm(request, perm_codename=None):
     
 
 class TinymceUploadImg(View):
-    """ tinymce 编辑器上传图片 """
+    """ tinymce 編輯上傳圖片 """
     from django.views.decorators.csrf import csrf_exempt
     from django.utils.decorators import method_decorator
     
@@ -58,7 +49,7 @@ class TinymceUploadImg(View):
     def post(self, request, *args, **kwargs):
         from baykeshop.models import BaykeUpload
         if not has_upload_perm(request, 'add_baykeupload'):
-            return JsonResponse({"message": "无权限！"}, status=400)
+            return JsonResponse({"message": "無權限"}, status=400)
         if request.FILES:
             from baykeshop.utils import add_upload_file 
             file_name = add_upload_file(request.FILES['file'])

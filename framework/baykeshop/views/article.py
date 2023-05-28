@@ -1,13 +1,5 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
-@文件    :article.py
-@说明    :文章相关
-@时间    :2023/05/15 18:50:40
-@作者    :幸福关中&轻编程
-@版本    :1.0
-@微信    :baywanyun
-'''
 
 from rest_framework.renderers import TemplateHTMLRenderer
 
@@ -17,7 +9,7 @@ from baykeshop.api.article import (
 
 
 class BaykeArticleView(BaykeArticleViewset):
-    """ 文章相关 """
+    """ 文章相關 """
     
     renderer_classes = [TemplateHTMLRenderer, ]
     
@@ -33,7 +25,7 @@ class BaykeArticleView(BaykeArticleViewset):
     
 
 class BaykeArticleCategoryView(BaykeArticleCategoryViewset):
-    """ 文章分类详情 """
+    """ 文章分類詳情 """
     
     renderer_classes = [TemplateHTMLRenderer, ]
     
@@ -44,7 +36,7 @@ class BaykeArticleCategoryView(BaykeArticleCategoryViewset):
     
 
 class BaykeArticleTagView(BaykeArticleTagViewset):
-    """ 文章分类详情 """
+    """ 文章分類詳情 """
     
     renderer_classes = [TemplateHTMLRenderer, ]
     

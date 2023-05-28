@@ -1,34 +1,53 @@
 {% load bayketags %}
 <div id="orderaAction{{ order.id }}">
-    <p class=" has-text-weight-bold pt-1 pb-1 has-text-right">共{{ order.baykeordersku_set|ordercount }}件商品，总金额{{ order.total_amount }}元（含运费）</p>
-    <div class=" buttons is-justify-content-end">
+  <p class="has-text-weight-bold pt-1 pb-1 has-text-right">
+    共{{ order.baykeordersku_set|ordercount }}件商品，總金額{{
+    order.total_amount }}元（含運費）
+  </p>
+  <div class="buttons is-justify-content-end">
     {% if order.pay_status == 1 %}
-        <a class="button is-primary is-small" href="{% url 'baykeshop:checkpay' order.id %}">立即支付</a>
+    <a
+      class="button is-primary is-small"
+      href="{% url 'baykeshop:checkpay' order.id %}"
+      >立即付款</a
+    >
     {% elif order.pay_status == 3 %}
-        <button class="button is-primary is-small" @click="confirmProduct">确认收货</button>
+    <button class="button is-primary is-small" @click="confirmProduct">
+      確認收貨
+    </button>
     {% elif order.pay_status == 4 and not order.is_commented %}
-        <a class=" button is-primary is-small" href="{% url 'baykeshop:menmber-orders-comment' order.id %}">立即评价</a>
+    <a
+      class="button is-primary is-small"
+      href="{% url 'baykeshop:menmber-orders-comment' order.id %}"
+      >立即評價</a
+    >
     {% endif %}
-    <a href="{% url 'baykeshop:menmber-orders-retrieve' order.id %}" class="button is-small">订单详情</a>
-    </div>
+    <a
+      href="{% url 'baykeshop:menmber-orders-retrieve' order.id %}"
+      class="button is-small"
+      >訂單詳情</a
+    >
+  </div>
 </div>
 
 <script>
-    var confirmAction = new Vue({
-        el: '#orderaAction{{ order.id }}',
-        delimiters: ['{$', '$}'],
-        methods: {
-            confirmProduct(){
-                request({
-                    url:'{% url "baykeshop:order-confirmproduct" order.id %}',
-                    method: 'post'
-                }).then(res => {
-                    if (res.data.code=='ok') {
-                        bayke.toastMessage('is-success', res.data.message)
-                        setTimeout(function(){location.reload()}, 2000)
-                    }
-                })
-            }
-        }
-    })
+  var confirmAction = new Vue({
+    el: "#orderaAction{{ order.id }}",
+    delimiters: ["{$", "$}"],
+    methods: {
+      confirmProduct() {
+        request({
+          url: '{% url "baykeshop:order-confirmproduct" order.id %}',
+          method: "post",
+        }).then((res) => {
+          if (res.data.code == "ok") {
+            bayke.toastMessage("is-success", res.data.message);
+            setTimeout(function () {
+              location.reload();
+            }, 2000);
+          }
+        });
+      },
+    },
+  });
 </script>

@@ -1,14 +1,5 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
-@文件    :tinymce.py
-@说明    :富文本编辑字段
-@时间    :2023/05/16 10:44:50
-@作者    :幸福关中&轻编程
-@版本    :1.0
-@微信    :baywanyun
-'''
-
 
 from django.db import models
 from django import forms
@@ -22,7 +13,7 @@ TinyConfig = """<script>tinymce.init({});</script>"""
 
 
 class Tinymce(forms.Textarea):
-    """ Tinymce表单小部件 """
+    """ Tinymce表單小部件 """
     def __init__(self, attrs=None, tinymce_kwgrgs=None) -> None:
         super().__init__(attrs)
         self.tinymce_kwargs = tinymce_kwgrgs or {**bayke_settings.TINYMCE_DEFAULTS}
@@ -50,7 +41,7 @@ class Tinymce(forms.Textarea):
 
 
 class TinymceField(models.TextField):
-    """ Tinymce富文本编辑器字段 """
+    """ Tinymce富文本編輯字串 """
     description = _("tinymce content")
     
     def __init__(self, *args, tinymce=None, **kwargs) -> None:

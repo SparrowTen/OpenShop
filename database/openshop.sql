@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2023-05-28 16:12:35
+-- 產生時間： 2023-05-28 16:28:51
 -- 伺服器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -281,8 +281,7 @@ CREATE TABLE `baykeshop_baykearticle` (
 --
 
 INSERT INTO `baykeshop_baykearticle` (`id`, `add_date`, `pub_date`, `is_del`, `title`, `desc`, `keywords`, `content`, `category_id`, `site_id`) VALUES
-(1, '2023-05-15 12:20:12.575000', '2023-05-16 03:00:03.027000', 0, '测试文章内容', '测试文章内容', '测试文章内容', '<p>测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容测试文章内容</p>\r\n<p><img src=\"../../../../../media/upload/665e0b6abc22492883583511390e2583.jpg\" alt=\"\" width=\"800\" height=\"800\"></p>', 1, NULL),
-(2, '2023-05-15 13:34:53.238000', '2023-05-15 13:34:53.238000', 0, 'Django 提供了高级和低级的方法来帮助你管理分页数据', 'Django 提供了高级和低级的方法来帮助你管理分页数据', 'Django 提供了高级和低级的方法来帮助你管理分页数据', 'Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据Django 提供了高级和低级的方法来帮助你管理分页数据', 1, NULL);
+(3, '2023-05-28 14:27:46.344357', '2023-05-28 14:27:46.344357', 0, '【推しの子】 7', '\r\n\r\n', '', '<p><img src=\"../../../../media/upload/35816481f40a4648805dad496ccde654.png\" alt=\"\" width=\"1767\" height=\"1254\"></p>\r\n<p><img src=\"../../../../media/upload/39320ccc6af04ea0a0b1498f7faec59b.png\" alt=\"\" width=\"1765\" height=\"1251\"></p>\r\n<p><img src=\"../../../../media/upload/21f0cc7da0a84daba1f242e27bafeb4b.png\" alt=\"\" width=\"1765\" height=\"1246\"></p>', 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -307,7 +306,7 @@ CREATE TABLE `baykeshop_baykearticlecategory` (
 --
 
 INSERT INTO `baykeshop_baykearticlecategory` (`id`, `add_date`, `pub_date`, `is_del`, `name`, `icon`, `desc`, `keywords`, `site_id`) VALUES
-(1, '2023-05-15 12:19:02.739000', '2023-05-15 12:19:02.739000', 0, '商品资讯', '', '', '', NULL);
+(2, '2023-05-28 14:14:38.784421', '2023-05-28 14:14:38.784421', 0, '試閱', '', '', '', NULL);
 
 -- --------------------------------------------------------
 
@@ -348,8 +347,7 @@ CREATE TABLE `baykeshop_baykearticle_tags` (
 --
 
 INSERT INTO `baykeshop_baykearticle_tags` (`id`, `baykearticle_id`, `baykearticletag_id`) VALUES
-(1, 1, 1),
-(2, 2, 1);
+(3, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -559,7 +557,11 @@ INSERT INTO `baykeshop_baykeproductbanner` (`id`, `add_date`, `pub_date`, `is_de
 (9, '2023-05-28 14:08:41.258124', '2023-05-28 14:08:41.258124', 0, 'upload/comic2.jpg', '', NULL, 5),
 (10, '2023-05-28 14:08:41.286638', '2023-05-28 14:08:41.286638', 0, 'upload/comic2_g85kSvD.jpg', '', NULL, 5),
 (11, '2023-05-28 14:10:30.517428', '2023-05-28 14:10:30.517428', 0, 'upload/comic3.jpg', '', NULL, 6),
-(12, '2023-05-28 14:10:30.518426', '2023-05-28 14:10:30.518426', 0, 'upload/comic3_5su8q9W.jpg', '', NULL, 6);
+(12, '2023-05-28 14:10:30.518426', '2023-05-28 14:10:30.518426', 0, 'upload/comic3_5su8q9W.jpg', '', NULL, 6),
+(13, '2023-05-28 14:17:30.590181', '2023-05-28 14:17:30.590181', 0, 'upload/comic4.jpg', '', NULL, 7),
+(14, '2023-05-28 14:17:30.595677', '2023-05-28 14:17:30.595677', 0, 'upload/comic4_wks6qKl.jpg', '', NULL, 7),
+(15, '2023-05-28 14:19:58.980935', '2023-05-28 14:19:58.980935', 0, 'upload/comic5.jpg', '', NULL, 8),
+(16, '2023-05-28 14:19:59.007686', '2023-05-28 14:19:59.007686', 0, 'upload/comic5_wpPSQS4.jpg', '', NULL, 8);
 
 -- --------------------------------------------------------
 
@@ -587,7 +589,7 @@ CREATE TABLE `baykeshop_baykeproductcategory` (
 --
 
 INSERT INTO `baykeshop_baykeproductcategory` (`id`, `add_date`, `pub_date`, `is_del`, `name`, `icon`, `desc`, `keywords`, `pic`, `is_nav`, `parent_id`, `site_id`) VALUES
-(8, '2023-05-28 13:41:33.564163', '2023-05-28 13:51:33.909789', 0, '漫畫', '', '男孩・青年漫畫、少女・女性漫畫、Webtoon、有聲漫畫、輕小說', '', 'product/cate/comic.png', 1, NULL, NULL),
+(8, '2023-05-28 13:41:33.564163', '2023-05-28 14:21:30.331187', 0, '漫畫', '', '男孩・青年漫畫、少女・女性漫畫、Webtoon、有聲漫畫、輕小說', '', 'product/cate/comic_LEPR27c.png', 1, NULL, NULL),
 (9, '2023-05-28 13:41:33.564163', '2023-05-28 13:41:33.564163', 0, '綜合', '', '', '', 'default/cate.png', 1, 8, NULL),
 (10, '2023-05-28 13:41:33.565159', '2023-05-28 13:41:33.565159', 0, '青年 / 少年漫畫', '', '', '', 'default/cate.png', 1, 8, NULL),
 (11, '2023-05-28 13:41:33.570146', '2023-05-28 13:41:33.570146', 0, '少女 / 女性漫畫', '', '', '', 'default/cate.png', 1, 8, NULL),
@@ -628,7 +630,9 @@ CREATE TABLE `baykeshop_baykeproductsku` (
 INSERT INTO `baykeshop_baykeproductsku` (`id`, `add_date`, `pub_date`, `is_del`, `pic`, `price`, `cost_price`, `stock`, `sales`, `item_id`, `weight`, `volume`, `is_release`, `site_id`, `spu_id`) VALUES
 (5, '2023-05-28 13:54:59.736874', '2023-05-28 13:54:59.736874', 0, 'product/2023/comic1.jpg', 50.00, 50.00, 99, 0, '1', 0, 0, 1, NULL, 4),
 (6, '2023-05-28 14:08:41.287635', '2023-05-28 14:08:41.287635', 0, 'product/2023/comic2.jpg', 50.00, 50.00, 99, 0, '2', 0, 0, 1, NULL, 5),
-(7, '2023-05-28 14:10:30.519423', '2023-05-28 14:10:30.519423', 0, 'product/2023/comic3.jpg', 50.00, 50.00, 99, 0, '3', 0, 0, 1, NULL, 6);
+(7, '2023-05-28 14:10:30.519423', '2023-05-28 14:10:30.519423', 0, 'product/2023/comic3.jpg', 50.00, 50.00, 99, 0, '3', 0, 0, 1, NULL, 6),
+(8, '2023-05-28 14:17:30.596674', '2023-05-28 14:17:30.596674', 0, 'product/2023/comic4.jpg', 50.00, 50.00, 99, 0, '4', 0, 0, 1, NULL, 7),
+(9, '2023-05-28 14:19:59.008683', '2023-05-28 14:19:59.008683', 0, 'product/2023/comic5.jpg', 50.00, 50.00, 99, 0, '5', 0, 0, 1, NULL, 8);
 
 -- --------------------------------------------------------
 
@@ -720,7 +724,9 @@ CREATE TABLE `baykeshop_baykeproductspu` (
 INSERT INTO `baykeshop_baykeproductspu` (`id`, `add_date`, `pub_date`, `is_del`, `title`, `desc`, `keywords`, `content`, `after_sale`, `pic`, `freight`, `site_id`) VALUES
 (4, '2023-05-28 13:54:59.731884', '2023-05-28 13:54:59.731884', 0, '鬼畜英雄（５）', 'タカミチ城に攻めてきた超巨大ゴブリンを華麗に撃退したオレたち。 祝杯パーティーのあとには、お待ちかねのムフフな&ldquo;お楽しみタイム&rdquo;で心身共にリフレ～ッシュ♪ そんな中、徴兵のために多くの兵士が集まった前線基地でゴブリンたちの奇策「人間爆弾」が猛威を', '', '<p>タカミチ城に攻めてきた超巨大ゴブリンを華麗に撃退したオレたち。 祝杯パーティーのあとには、お待ちかねのムフフな&ldquo;お楽しみタイム&rdquo;で心身共にリフレ～ッシュ♪ そんな中、徴兵のために多くの兵士が集まった前線基地でゴブリンたちの奇策「人間爆弾」が猛威を振るう事態に。 さっそく問題解決に駆り出されたと思った</p>', '', 'goods/2023/comic1.jpg', 0.00, NULL),
 (5, '2023-05-28 14:08:41.255132', '2023-05-28 14:08:41.255132', 0, '悪役令嬢の中の人～断罪された転生者のため嘘つきヒロインに復讐いたします～: 3【イラスト特典付】', '「どんな運命だろうとも、わたくしが決めた信念には敵わない」悪役令嬢レミリアはゲームのシナリオを着々と進め、ついにラスボスがいる魔界へ。魔王アンヘルとの謁見で明かされる魔族の現実と狂化の真実。そして魔界の奥に眠るこの世界をつくった創世神に挑む――。世界を巻き込む第3巻、描', '', '<p>「どんな運命だろうとも、わたくしが決めた信念には敵わない」悪役令嬢レミリアはゲームのシナリオを着々と進め、ついにラスボスがいる魔界へ。魔王アンヘルとの謁見で明かされる魔族の現実と狂化の真実。そして魔界の奥に眠るこの世界をつくった創世神に挑む――。世界を巻き込む第3巻、描き下ろし短編も収録！</p>', '', 'goods/2023/comic2.jpg', 0.00, NULL),
-(6, '2023-05-28 14:10:30.511440', '2023-05-28 14:10:30.511440', 0, '陰の実力者になりたくて！　（１１）', '異世界に転生し、あらゆる物事に陰から介入し実力を示す「陰の実力者」設定をエンジョイしているシド。ローズ王女結婚の噂を聞き、結婚阻止計画を実行するべくオリアナ王国の城に潜入する。シドはローズに、王妃ではなく光の覇王になってほしかったのだ。なぜなら光あるところに「陰の実力者', '', '<p>異世界に転生し、あらゆる物事に陰から介入し実力を示す「陰の実力者」設定をエンジョイしているシド。ローズ王女結婚の噂を聞き、結婚阻止計画を実行するべくオリアナ王国の城に潜入する。シドはローズに、王妃ではなく光の覇王になってほしかったのだ。<br>なぜなら光あるところに「陰の実力者」はより濃く存在できるから――！<br><br>いつも通りの勘違いも、いつも通りに炸裂する異世界異聞奇譚、信念の第11巻!!</p>', '', 'goods/2023/comic3.jpg', 0.00, NULL);
+(6, '2023-05-28 14:10:30.511440', '2023-05-28 14:10:30.511440', 0, '陰の実力者になりたくて！　（１１）', '異世界に転生し、あらゆる物事に陰から介入し実力を示す「陰の実力者」設定をエンジョイしているシド。ローズ王女結婚の噂を聞き、結婚阻止計画を実行するべくオリアナ王国の城に潜入する。シドはローズに、王妃ではなく光の覇王になってほしかったのだ。なぜなら光あるところに「陰の実力者', '', '<p>異世界に転生し、あらゆる物事に陰から介入し実力を示す「陰の実力者」設定をエンジョイしているシド。ローズ王女結婚の噂を聞き、結婚阻止計画を実行するべくオリアナ王国の城に潜入する。シドはローズに、王妃ではなく光の覇王になってほしかったのだ。<br>なぜなら光あるところに「陰の実力者」はより濃く存在できるから――！<br><br>いつも通りの勘違いも、いつも通りに炸裂する異世界異聞奇譚、信念の第11巻!!</p>', '', 'goods/2023/comic3.jpg', 0.00, NULL),
+(7, '2023-05-28 14:17:30.587189', '2023-05-28 14:17:30.587189', 0, '【推しの子】 7', '「俺にとって演じる事は復讐だ」　大人気漫画『東京ブレイド』の2.5次元舞台、本番が開幕!!　幼少時の因縁を元に対立する、かつての天才子役・有馬かなと現『劇団ララライ』エース・黒川あかねは舞台上で自身の演技をぶつけ合う!!　そして、&ldquo;感情演技&rdquo;の為', '', '<p>「俺にとって演じる事は復讐だ」　大人気漫画『東京ブレイド』の2.5次元舞台、本番が開幕!!　幼少時の因縁を元に対立する、かつての天才子役・有馬かなと現『劇団ララライ』エース・黒川あかねは舞台上で自身の演技をぶつけ合う!!　そして、&ldquo;感情演技&rdquo;の為、自身のトラウマと向き合う星野アクアが辿り着く役者としての生き様とは!?　第五章　2.5次元舞台編、クライマックス!!　&ldquo;赤坂アカ&times;横槍メンゴ&rdquo;の豪華タッグが全く新しい切り口で&ldquo;芸能界&rdquo;を描く衝撃作&hellip;第7巻!!　※正式な著者表記「赤坂アカ&times;横槍メンゴ」</p>', '', 'goods/2023/comic4.jpg', 0.00, NULL),
+(8, '2023-05-28 14:19:58.973443', '2023-05-28 14:19:58.973443', 0, '望まぬ不死の冒険者 11', '神銀級冒険者を目指す――その理由を遂に語ったレント。その後、ロレーヌと共に己が持つ『聖気の根源』を知るべくかつて聖気を授かった&ldquo;祠&rdquo;へと向かう。到着早々に二人で汚れていた祠の掃除をしていたところ突然ロレーヌが持っていた人形に『神霊』を名乗る存在が', '', '<p>神銀級冒険者を目指す――その理由を遂に語ったレント。<br>その後、ロレーヌと共に己が持つ『聖気の根源』を知るべくかつて聖気を授かった&ldquo;祠&rdquo;へと向かう。<br><br>到着早々に二人で汚れていた祠の掃除をしていたところ突然ロレーヌが持っていた人形に『神霊』を名乗る存在が憑依。<br>その存在こそ、レントに聖気を与えたもので&hellip;&hellip;!?<br><br>そして神霊との交流を終えた矢先、師のカピタンとガルブがレントたちの前に現れ「村を終わらせる」と宣言する。<br>炎に包まれ始めた村に駆け付けようとするも、師である二人はそれを許さず、本気の決闘をレントに挑んでくるのだった――。<br><br>巻末に書き下ろし小説＆描き下ろし漫画を収録。</p>', '', 'goods/2023/comic5.jpg', 0.00, NULL);
 
 -- --------------------------------------------------------
 
@@ -741,7 +747,9 @@ CREATE TABLE `baykeshop_baykeproductspu_cates` (
 INSERT INTO `baykeshop_baykeproductspu_cates` (`id`, `baykeproductspu_id`, `baykeproductcategory_id`) VALUES
 (5, 4, 9),
 (6, 5, 9),
-(7, 6, 9);
+(7, 6, 9),
+(8, 7, 9),
+(9, 8, 9);
 
 -- --------------------------------------------------------
 
@@ -775,6 +783,15 @@ CREATE TABLE `baykeshop_baykeupload` (
   `img` varchar(200) NOT NULL,
   `site_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- 傾印資料表的資料 `baykeshop_baykeupload`
+--
+
+INSERT INTO `baykeshop_baykeupload` (`id`, `add_date`, `pub_date`, `is_del`, `img`, `site_id`) VALUES
+(1, '2023-05-28 14:27:02.092235', '2023-05-28 14:27:02.092235', 0, 'upload/35816481f40a4648805dad496ccde654.png', NULL),
+(2, '2023-05-28 14:27:14.382467', '2023-05-28 14:27:14.382467', 0, 'upload/39320ccc6af04ea0a0b1498f7faec59b.png', NULL),
+(3, '2023-05-28 14:27:32.761880', '2023-05-28 14:27:32.761880', 0, 'upload/21f0cc7da0a84daba1f242e27bafeb4b.png', NULL);
 
 -- --------------------------------------------------------
 
@@ -881,7 +898,16 @@ INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`,
 (19, '2023-05-28 14:05:22.382938', '1', '索尼（SONY）WH-H910N 蓝牙降噪无线耳机 头戴式Hi-Res音质游戏耳机 手机耳机（hear系列 灰绿色 ）', 3, '', 18, 1),
 (20, '2023-05-28 14:05:45.337237', '5', 'Home Banner/media/upload/openshop_logo.png', 2, '[{\"changed\": {\"fields\": [\"\\u56fe\\u7247\"]}}]', 26, 1),
 (21, '2023-05-28 14:08:41.293156', '5', '悪役令嬢の中の人～断罪された転生者のため嘘つきヒロインに復讐いたします～: 3【イラスト特典付】', 1, '[{\"added\": {}}, {\"added\": {\"name\": \"BaykeProductBanner\", \"object\": \"upload/comic2.jpg\"}}, {\"added\": {\"name\": \"BaykeProductBanner\", \"object\": \"upload/comic2_g85kSvD.jpg\"}}, {\"added\": {\"name\": \"BaykeProductSKU\", \"object\": \"\\u60aa\\u5f79\\u4ee4\\u5b22\\u306e\\u4e2d\\u306e\\u4eba\\uff5e\\u65ad\\u7f6a\\u3055\\u308c\\u305f\\u8ee2\\u751f\\u8005\\u306e\\u305f\\u3081\\u5618\\u3064\\u304d\\u30d2\\u30ed\\u30a4\\u30f3\\u306b\\u5fa9\\u8b90\\u3044\\u305f\\u3057\\u307e\\u3059\\uff5e: 3\\u3010\\u30a4\\u30e9\\u30b9\\u30c8\\u7279\\u5178\\u4ed8\\u3011\"}}]', 18, 1),
-(22, '2023-05-28 14:10:30.528972', '6', '陰の実力者になりたくて！　（１１）', 1, '[{\"added\": {}}, {\"added\": {\"name\": \"BaykeProductBanner\", \"object\": \"upload/comic3.jpg\"}}, {\"added\": {\"name\": \"BaykeProductBanner\", \"object\": \"upload/comic3_5su8q9W.jpg\"}}, {\"added\": {\"name\": \"BaykeProductSKU\", \"object\": \"\\u9670\\u306e\\u5b9f\\u529b\\u8005\\u306b\\u306a\\u308a\\u305f\\u304f\\u3066\\uff01\\u3000\\uff08\\uff11\\uff11\\uff09\"}}]', 18, 1);
+(22, '2023-05-28 14:10:30.528972', '6', '陰の実力者になりたくて！　（１１）', 1, '[{\"added\": {}}, {\"added\": {\"name\": \"BaykeProductBanner\", \"object\": \"upload/comic3.jpg\"}}, {\"added\": {\"name\": \"BaykeProductBanner\", \"object\": \"upload/comic3_5su8q9W.jpg\"}}, {\"added\": {\"name\": \"BaykeProductSKU\", \"object\": \"\\u9670\\u306e\\u5b9f\\u529b\\u8005\\u306b\\u306a\\u308a\\u305f\\u304f\\u3066\\uff01\\u3000\\uff08\\uff11\\uff11\\uff09\"}}]', 18, 1),
+(23, '2023-05-28 14:14:22.882031', '2', 'Django 提供了高级和低级的方法来帮助你管理分页数据', 3, '', 29, 1),
+(24, '2023-05-28 14:14:26.681981', '1', '测试文章内容', 3, '', 29, 1),
+(25, '2023-05-28 14:14:38.785417', '2', '試閱', 1, '[{\"added\": {}}]', 28, 1),
+(26, '2023-05-28 14:17:30.604183', '7', '【推しの子】 7', 1, '[{\"added\": {}}, {\"added\": {\"name\": \"BaykeProductBanner\", \"object\": \"upload/comic4.jpg\"}}, {\"added\": {\"name\": \"BaykeProductBanner\", \"object\": \"upload/comic4_wks6qKl.jpg\"}}, {\"added\": {\"name\": \"BaykeProductSKU\", \"object\": \"\\u3010\\u63a8\\u3057\\u306e\\u5b50\\u3011 7\"}}]', 18, 1),
+(27, '2023-05-28 14:19:59.025511', '8', '望まぬ不死の冒険者 11', 1, '[{\"added\": {}}, {\"added\": {\"name\": \"BaykeProductBanner\", \"object\": \"upload/comic5.jpg\"}}, {\"added\": {\"name\": \"BaykeProductBanner\", \"object\": \"upload/comic5_wpPSQS4.jpg\"}}, {\"added\": {\"name\": \"BaykeProductSKU\", \"object\": \"\\u671b\\u307e\\u306c\\u4e0d\\u6b7b\\u306e\\u5192\\u967a\\u8005 11\"}}]', 18, 1),
+(28, '2023-05-28 14:20:22.041112', '8', '漫畫', 2, '[{\"changed\": {\"fields\": [\"\\u63a8\\u8350\\u56fe\"]}}]', 11, 1),
+(29, '2023-05-28 14:21:30.333549', '8', '漫畫', 2, '[{\"changed\": {\"fields\": [\"\\u63a8\\u8350\\u56fe\"]}}]', 11, 1),
+(30, '2023-05-28 14:23:28.265367', '1', '商品资讯', 3, '', 28, 1),
+(31, '2023-05-28 14:27:46.346351', '3', '【推しの子】 7', 1, '[{\"added\": {}}]', 29, 1);
 
 -- --------------------------------------------------------
 
@@ -1416,13 +1442,13 @@ ALTER TABLE `baykeshop_baykeaddress`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykearticle`
 --
 ALTER TABLE `baykeshop_baykearticle`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykearticlecategory`
 --
 ALTER TABLE `baykeshop_baykearticlecategory`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykearticletag`
@@ -1434,7 +1460,7 @@ ALTER TABLE `baykeshop_baykearticletag`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykearticle_tags`
 --
 ALTER TABLE `baykeshop_baykearticle_tags`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykebanner`
@@ -1482,7 +1508,7 @@ ALTER TABLE `baykeshop_baykepermission`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykeproductbanner`
 --
 ALTER TABLE `baykeshop_baykeproductbanner`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykeproductcategory`
@@ -1494,7 +1520,7 @@ ALTER TABLE `baykeshop_baykeproductcategory`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykeproductsku`
 --
 ALTER TABLE `baykeshop_baykeproductsku`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykeproductsku_options`
@@ -1518,13 +1544,13 @@ ALTER TABLE `baykeshop_baykeproductspecoption`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykeproductspu`
 --
 ALTER TABLE `baykeshop_baykeproductspu`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykeproductspu_cates`
 --
 ALTER TABLE `baykeshop_baykeproductspu_cates`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykesite`
@@ -1536,7 +1562,7 @@ ALTER TABLE `baykeshop_baykesite`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykeupload`
 --
 ALTER TABLE `baykeshop_baykeupload`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykeuser`
@@ -1560,7 +1586,7 @@ ALTER TABLE `baykeshop_baykeverifycode`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `django_admin_log`
 --
 ALTER TABLE `django_admin_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `django_content_type`

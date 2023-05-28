@@ -10,7 +10,7 @@
 <div class="container">
 	<nav class="breadcrumb is-marginless mt-3 mb-3 is-small" aria-label="breadcrumbs">
 		<ul>
-			<li><a href="{% url 'baykeshop:home' %}">首页</a></li>
+			<li><a href="{% url 'baykeshop:home' %}">首頁</a></li>
             {% if cate.parent %}
                 <li><a href="{% url 'baykeshop:cate-detail' cate.parent.id %}">{{ cate.parent.name }}</a></li>
             {% endif %}
@@ -33,7 +33,7 @@
 
 <div class="box is-radiusless">
     <div>
-        <span class=" has-text-grey-light">分类：</span>
+        <span class=" has-text-grey-light">分類：</span>
         {% for item in category.sub_cates %}
             <a class="mr-2 {% if item.id == cate.id %} has-text-danger-dark {% else %} has-text-black {% endif %}" 
                 href="{% url 'baykeshop:cate-detail' item.id %}">{{ item.name }}</a>

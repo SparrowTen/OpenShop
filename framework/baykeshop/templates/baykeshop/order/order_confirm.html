@@ -1,5 +1,10 @@
-{% extends 'baykeshop/base_site.html' %} {% load i18n static %} {% block title
-%}訂單確認{% endblock %} {% block breadcrumb %}
+{% extends 'baykeshop/base_site.html' %}
+
+{% load i18n static %} 
+
+{% block title%}訂單確認{% endblock %} 
+
+{% block breadcrumb %}
 <div class="container">
   <nav
     class="breadcrumb is-marginless mt-3 mb-3 is-small"
@@ -11,7 +16,9 @@
     </ul>
   </nav>
 </div>
-{% endblock %} {% block container %}
+{% endblock %} 
+
+{% block container %}
 
 <div class="box">
   <h1 class="is-size-5">收貨地址</h1>
@@ -26,8 +33,9 @@
   <h1 class="is-size-5">訂單商品</h1>
   <div class="dropdown-divider"></div>
 
-  {% for sku in skus %} {% include 'baykeshop/comp/sku.html' with sku=sku %} {%
-  endfor %}
+  {% for sku in skus %} 
+  {% include 'baykeshop/comp/sku.html' with sku=sku %} 
+  {%endfor %}
 
   <div class="dropdown-divider"></div>
 
@@ -84,7 +92,10 @@
     </div>
   </div>
 </div>
-{{ skus|json_script:"skus-data" }} {% endblock %} {% block vue %}
+{{ skus|json_script:"skus-data" }} 
+{% endblock %} 
+
+{% block vue %}
 <script>
   var skusData = JSON.parse(document.getElementById("skus-data").textContent);
   var order = new Vue({

@@ -53,7 +53,7 @@ DEFAULTS_CONF = {
     # 是否开启关联分类搜索
     "HAS_SEARCH_CATEGORY": False,
     
-    "PC_LOGO": "baykeshop",
+    "PC_LOGO": "OpenShop",
     
     "SEARCH_VALUE": "請輸入搜索關鍵字",
     

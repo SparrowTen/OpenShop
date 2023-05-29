@@ -2,9 +2,9 @@
 
 {% load i18n %}
 
-{% block title %}注册{% endblock %}
+{% block title %}註冊{% endblock %}
 
-{% block login_title %}注册{% endblock %}
+{% block login_title %}註冊{% endblock %}
 
 {% block form %}
 <div id="register" class="pt-3">
@@ -43,7 +43,7 @@
             <b-input 
                 type="text" 
                 maxlength="4" 
-                placeholder="验证码" 
+                placeholder="驗證碼" 
                 v-model="code" 
                 :has-counter="false" 
                 v-if="email" 
@@ -60,7 +60,7 @@
             @click="login" 
             expanded 
             :disabled="username && password && email && code ? false : true">
-            注册
+            註冊
         </b-button>
     </b-field>
 
@@ -80,7 +80,7 @@
                 username: '',
                 password: '',
                 email: '',
-                codetext: '获取验证码',
+                codetext: '獲取驗證碼',
                 isshow: true,
                 date: 60
             },
@@ -101,9 +101,9 @@
                     }).then(res => {
                         console.log(res)
                         if (res.status == 201 || res.status == 200){
-                            bayke.toastMessage('is-success', '验证码已发送，请前往邮箱查收！')
+                            bayke.toastMessage('is-success', '驗證碼已發送，請前往郵箱查收！')
                         }else{
-                            bayke.toastMessage('is-danger', '验证码发送失败！')
+                            bayke.toastMessage('is-danger', '驗證碼發送失敗！')
                         }
                     })
                 },
@@ -120,13 +120,13 @@
                         }
                     }).then(res => {
                         if (res.status == 201 || res.status == 200){
-                            bayke.toastMessage('is-success', '注册成功，请登录！')
+                            bayke.toastMessage('is-success', '註冊成功，請登錄！')
                             setTimeout(() => {
                                 location.href = '{% url "baykeshop:login" %}'
                             }, 2000);
                             
                         }else{
-                            bayke.toastMessage('is-danger', '注册失败，请检查！')
+                            bayke.toastMessage('is-danger', '註冊失敗，請檢查！')
                         }
                     })
                 }

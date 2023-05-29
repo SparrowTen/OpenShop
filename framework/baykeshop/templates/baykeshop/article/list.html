@@ -1,5 +1,8 @@
-{% extends 'baykeshop/base_site.html' %} {% load bayketags static %} {% block
-title %}商城資訊{% endblock %} {% block breadcrumb %}
+{% extends 'baykeshop/base_site.html' %} 
+{% load bayketags static %} 
+{% block title %} 商城資訊 {% endblock %} 
+
+{% block breadcrumb %}
 <div class="container">
   <nav
     class="breadcrumb is-marginless mt-3 mb-3 is-small"
@@ -25,7 +28,7 @@ title %}商城資訊{% endblock %} {% block breadcrumb %}
         <div class="has-text-grey-light">
           <span>
             <span class="icon"><i class="mdi mdi-menu"></i></span>
-            分类：<a
+            分類：<a
               href="{% url 'baykeshop:article-cate-pc' article.category.id %}"
             >
               {{ article.category.name }}</a
@@ -39,7 +42,7 @@ title %}商城資訊{% endblock %} {% block breadcrumb %}
           </span>
           <span>
             <span class="icon"><i class="mdi mdi-tag-check-outline"></i></span>
-            标签： {% for tag in article.tags %}
+            標籤： {% for tag in article.tags %}
             <a href="{% url 'baykeshop:article-tag-pc' tag.id %}">
               {{ tag.name }}
             </a>
@@ -52,7 +55,7 @@ title %}商城資訊{% endblock %} {% block breadcrumb %}
     </div>
     <div class="column">
       <div class="box">
-        <h1 class="is-size-5 has-text-weight-bold">分类</h1>
+        <h1 class="is-size-5 has-text-weight-bold">分類</h1>
         <div class="dropdown-divider"></div>
         {% article_cates as cates %}
         <div class="menu">

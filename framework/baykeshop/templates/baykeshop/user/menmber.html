@@ -3,15 +3,15 @@
 {% load static %}
 
 {% block title %}
-{{ request.user.username }} - 个人中心    
+{{ request.user.username }} - 個人中心    
 {% endblock %}
 
 {% block breadcrumb %}
 <div class="container">
   <nav class="breadcrumb is-marginless mt-3 mb-3 is-small" aria-label="breadcrumbs">
     <ul>
-      <li><a href="{% url 'baykeshop:home' %}">首页</a></li>
-      <li class="is-active"><a href="#" aria-current="page">个人中心</a></li>
+      <li><a href="{% url 'baykeshop:home' %}">首頁</a></li>
+      <li class="is-active"><a href="#" aria-current="page">個人中心</a></li>
     </ul>
   </nav>
 </div>
@@ -37,7 +37,7 @@
             <div class="box is-radiusless">
                 <aside class="menu">
                     <p class="menu-label">
-                      账户管理
+                      帳戶管理
                     </p>
                     <ul class="menu-list">
                       <li><a href="{% url 'baykeshop:menmber' request.user.id %}" class="{% if active == 'menmber' %} is-active {% endif %}">个人信息</a></li>
@@ -45,7 +45,7 @@
                       <li><a href="{% url 'baykeshop:menmber-address' %}" class="{% if 'address' in request.path %} is-active {% endif %}">地址管理</a></li>
                     </ul>
                     <p class="menu-label">
-                      订单管理
+                      訂單管理
                     </p>
                     <ul class="menu-list">
                       <li><a href="{% url 'baykeshop:menmber-orders' %}" class="{% if 'order' in request.path %} is-active {% endif %}">我的订单</a></li>
@@ -59,12 +59,12 @@
         <div class="column">
             <div class="box is-radiusless">
                 <h1 class="is-size-4">
-                {% block menmber_title %}个人中心{% endblock %}
+                {% block menmber_title %}個人中心{% endblock %}
                 </h1>
                 <div class="dropdown-divider"></div> 
                 {% block menmber %} 
                 <div class="columns pt-3 pb-3">
-                    <div class=" column is-2">个人信息</div>
+                    <div class=" column is-2">個人資訊</div>
                     {% include 'baykeshop/user/comp/userinfo.html' %}
                 </div>
                 {% endblock %}

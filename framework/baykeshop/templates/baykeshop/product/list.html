@@ -24,7 +24,7 @@
 
 {% filtercates cate as category %}
 <div class="box is-marginless is-radiusless">
-    <a href="{% url 'baykeshop:goods' %}" class="mr-2 {% if request.path == '/goods/' %} has-text-danger-dark {% else %} has-text-black {% endif %}">全部分类</a>
+    <a href="{% url 'baykeshop:goods' %}" class="mr-2 {% if request.path == '/goods/' %} has-text-danger-dark {% else %} has-text-black {% endif %}">全部分類</a>
     {% for item in category.cates %}
         <a class="mr-2 {% if item.id == cate.id or item.id == cate.parent.id %} has-text-danger-dark {% else %} has-text-black {% endif %}" 
             href="{% url 'baykeshop:cate-detail' item.id %}">{{ item.name }}</a>
@@ -43,31 +43,31 @@
         <span class=" has-text-grey-light">排序：</span>
         
         {% if request.GET.price == '-baykeproductsku__price' %}
-        <a class="mr-2 has-text-black {% if request.GET.price %} has-text-danger-dark {% endif %}" href="?price=baykeproductsku__price">价格
+        <a class="mr-2 has-text-black {% if request.GET.price %} has-text-danger-dark {% endif %}" href="?price=baykeproductsku__price">價格
             {% if request.GET.price %}<span class="mdi mdi-arrow-down"></span>{% endif %}
         </a>
         {% else %}
-        <a class="mr-2 has-text-black {% if request.GET.price %} has-text-danger-dark {% endif %}" href="?price=-baykeproductsku__price">价格
+        <a class="mr-2 has-text-black {% if request.GET.price %} has-text-danger-dark {% endif %}" href="?price=-baykeproductsku__price">價格
             {% if request.GET.price %}<span class="mdi mdi-arrow-up"></span>{% endif %}
         </a>
         {% endif %}
 
         {% if request.GET.sales == '-baykeproductsku__sales' %}
-        <a class="mr-2 has-text-black {% if request.GET.sales %} has-text-danger-dark {% endif %}" href="?sales=baykeproductsku__sales">销量
+        <a class="mr-2 has-text-black {% if request.GET.sales %} has-text-danger-dark {% endif %}" href="?sales=baykeproductsku__sales">銷量
             {% if request.GET.sales %}<span class="mdi mdi-arrow-down"></span>{% endif %}
         </a>
         {% else %}
-        <a class="mr-2 has-text-black {% if request.GET.sales %} has-text-danger-dark {% endif %}" href="?sales=-baykeproductsku__sales">销量
+        <a class="mr-2 has-text-black {% if request.GET.sales %} has-text-danger-dark {% endif %}" href="?sales=-baykeproductsku__sales">銷量
             {% if request.GET.sales %}<span class="mdi mdi-arrow-up"></span>{% endif %}
         </a>
         {% endif %}
 
         {% if request.GET.add_date == '-add_date' %}
-        <a class="mr-2 has-text-black {% if request.GET.add_date %} has-text-danger-dark {% endif %}" href="?add_date=add_date">上架时间
+        <a class="mr-2 has-text-black {% if request.GET.add_date %} has-text-danger-dark {% endif %}" href="?add_date=add_date">上架時間
             {% if request.GET.add_date %}<span class="mdi mdi-arrow-down"></span>{% endif %}
         </a>
         {% else %}
-        <a class="mr-2 has-text-black {% if request.GET.add_date %} has-text-danger-dark {% endif %}" href="?add_date=-add_date">上架时间
+        <a class="mr-2 has-text-black {% if request.GET.add_date %} has-text-danger-dark {% endif %}" href="?add_date=-add_date">上架時間
             {% if request.GET.add_date %}<span class="mdi mdi-arrow-up"></span>{% endif %}
         </a>
         {% endif %}

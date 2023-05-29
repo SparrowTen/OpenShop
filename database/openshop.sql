@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2023-05-29 14:09:41
+-- 產生時間： 2023-05-29 15:15:06
 -- 伺服器版本： 10.4.28-MariaDB
--- PHP 版本： 8.0.28
+-- PHP 版本： 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -208,7 +208,7 @@ CREATE TABLE `auth_user` (
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
-(1, 'pbkdf2_sha256$600000$JkY2SsR7XMW5Sv9Af2aThx$9a5GIn1SB9m4DD6uxOVVJREALRAVpwPmpgUG/KNw2Io=', '2023-05-27 15:20:57.963515', 1, 'poyu', '', '', 'bruce920309@gmail.com', 1, 1, '2023-05-27 15:20:30.482076');
+(1, 'pbkdf2_sha256$600000$JkY2SsR7XMW5Sv9Af2aThx$9a5GIn1SB9m4DD6uxOVVJREALRAVpwPmpgUG/KNw2Io=', '2023-05-29 12:52:50.359137', 1, 'poyu', '', '', 'bruce920309@gmail.com', 1, 1, '2023-05-27 15:20:30.482076');
 
 -- --------------------------------------------------------
 
@@ -281,7 +281,8 @@ CREATE TABLE `baykeshop_baykearticle` (
 --
 
 INSERT INTO `baykeshop_baykearticle` (`id`, `add_date`, `pub_date`, `is_del`, `title`, `desc`, `keywords`, `content`, `category_id`, `site_id`) VALUES
-(3, '2023-05-28 14:27:46.344357', '2023-05-28 14:27:46.344357', 0, '【推しの子】 7', '\r\n\r\n', '', '<p><img src=\"../../../../media/upload/35816481f40a4648805dad496ccde654.png\" alt=\"\" width=\"1767\" height=\"1254\"></p>\r\n<p><img src=\"../../../../media/upload/39320ccc6af04ea0a0b1498f7faec59b.png\" alt=\"\" width=\"1765\" height=\"1251\"></p>\r\n<p><img src=\"../../../../media/upload/21f0cc7da0a84daba1f242e27bafeb4b.png\" alt=\"\" width=\"1765\" height=\"1246\"></p>', 2, NULL);
+(3, '2023-05-28 14:27:46.344357', '2023-05-29 12:53:24.785837', 0, '【推しの子】 7', '\r\n\r\n', '', '<p><img src=\"../../../../media/upload/35816481f40a4648805dad496ccde654.png\" alt=\"\" width=\"1767\" height=\"1254\"></p>\r\n<p><img src=\"../../../../media/upload/39320ccc6af04ea0a0b1498f7faec59b.png\" alt=\"\" width=\"1765\" height=\"1251\"></p>\r\n<p><img src=\"../../../../media/upload/21f0cc7da0a84daba1f242e27bafeb4b.png\" alt=\"\" width=\"1765\" height=\"1246\"></p>', 2, NULL),
+(4, '2023-05-29 13:05:16.657996', '2023-05-29 13:05:16.657996', 0, '【心得】第40話前後一些有趣的細節(有雷)', '首先關於阿庫雅的真命天女是誰 漫畫雖然演到目前已經看出來了\r\n但實際上在漫畫第40話前後就已經揭露了\r\n&nbsp;\r\n很多人一定以為是露比對MEM說[老哥只有對有馬才會像以前那樣]那句話 但我的觀點實際上是在穿著上\r\n\r\n阿庫雅身上穿的衣服寫著[最喜歡了]的字樣的衣服', '', '<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\"><span>首先關於阿庫雅的真命天女是誰 漫畫雖然演到目前已經看出來了</span></span></span><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\"><span><br></span></span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\"><span>但實際上在漫畫第40話前後就已經揭露了</span></span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">&nbsp;</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">很多人一定以為是露比對MEM說[老哥只有對有馬才會像以前那樣]那句話 但我的觀點實際上是在穿著上</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\"><a class=\"photoswipe-image\" href=\"https://truth.bahamut.com.tw/s01/202305/4077a87bf1c09853d30d984c8dcfc98a.JPG\"><img class=\" lazyloaded\" src=\"https://truth.bahamut.com.tw/s01/202305/4077a87bf1c09853d30d984c8dcfc98a.JPG\" srcset=\"https://truth.bahamut.com.tw/s01/202305/4077a87bf1c09853d30d984c8dcfc98a.JPG?w=1000 1x,https://truth.bahamut.com.tw/s01/202305/4077a87bf1c09853d30d984c8dcfc98a.JPG 2x\" data-src=\"https://truth.bahamut.com.tw/s01/202305/4077a87bf1c09853d30d984c8dcfc98a.JPG\" data-srcset=\"https://truth.bahamut.com.tw/s01/202305/4077a87bf1c09853d30d984c8dcfc98a.JPG?w=1000 1x,https://truth.bahamut.com.tw/s01/202305/4077a87bf1c09853d30d984c8dcfc98a.JPG 2x\"></a></span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">阿庫雅身上穿的衣服寫著[最喜歡了]的字樣的衣服同時有個做出東方仗助JOJO立的人影</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">&nbsp;</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">這邊[最喜歡了]的字樣不用說是什麼意思</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">&nbsp;</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">另外東方仗助JOJO立的人影代表的意思實在很有趣</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">&nbsp;</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">說到仗助就不能不提他跟[變身]系列的網路梗圖<a class=\"photoswipe-image\" href=\"https://truth.bahamut.com.tw/s01/202305/3348c35b6bb442fbab4ee4521cbf190d.JPG\"><img class=\" lazyloaded\" src=\"https://truth.bahamut.com.tw/s01/202305/3348c35b6bb442fbab4ee4521cbf190d.JPG\" srcset=\"https://truth.bahamut.com.tw/s01/202305/3348c35b6bb442fbab4ee4521cbf190d.JPG?w=1000 1x,https://truth.bahamut.com.tw/s01/202305/3348c35b6bb442fbab4ee4521cbf190d.JPG 2x\" data-src=\"https://truth.bahamut.com.tw/s01/202305/3348c35b6bb442fbab4ee4521cbf190d.JPG\" data-srcset=\"https://truth.bahamut.com.tw/s01/202305/3348c35b6bb442fbab4ee4521cbf190d.JPG?w=1000 1x,https://truth.bahamut.com.tw/s01/202305/3348c35b6bb442fbab4ee4521cbf190d.JPG 2x\"></a>甚至新堂本人也轉發了這圖片</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">&nbsp;</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">到</span></span><span style=\"font-size: small;\"><span style=\"color: #0f0f0f;\">底是赤坂在暗地裡表示後續舞台劇時阿庫雅的心裡話</span></span></div>\r\n<div><span style=\"font-size: small;\"><span style=\"color: #0f0f0f;\">[希望機械降神復活小愛]</span></span></div>\r\n<div><span style=\"font-size: small;\"><span style=\"color: #0f0f0f;\">&nbsp;</span></span></div>\r\n<div><span style=\"font-size: small;\"><span style=\"color: #0f0f0f;\">還是單純的借用那個類似遮臉的動作來表達掩飾內心的意思?</span></span></div>\r\n<div><span style=\"font-size: small;\"><span style=\"color: #0f0f0f;\">&nbsp;</span></span></div>\r\n<div><span style=\"font-size: small;\"><span style=\"color: #0f0f0f;\">抑或是兩者都有呢?</span></span></div>\r\n<div><span style=\"font-size: small;\"><span style=\"color: #0f0f0f;\">&nbsp;</span></span></div>\r\n<div><span style=\"font-size: small;\"><span style=\"color: #0f0f0f;\">另外整個LIVE篇幾乎都是在各方面表露出阿庫亞的真命天女就是有馬</span></span></div>\r\n<div><span style=\"font-size: small;\"><span style=\"color: #0f0f0f;\">&nbsp;</span></span></div>\r\n<div><span style=\"font-size: small;\"><span style=\"color: #0f0f0f;\">例</span></span><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">如面對茜的告白 阿庫亞首先想到的是找有馬翹課去整理心情</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">&nbsp;</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">在面對15日練習因為跟茜告白而生氣的有馬</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">&nbsp;</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">阿庫亞也對啾啾仔坦露自己其實很脆弱</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">&nbsp;</span></span></div>\r\n<div><span style=\"color: #0f0f0f;\"><span style=\"font-size: small;\">這波是青梅竹馬戰勝天降之物的勝利!</span></span></div>', 3, NULL);
 
 -- --------------------------------------------------------
 
@@ -306,7 +307,8 @@ CREATE TABLE `baykeshop_baykearticlecategory` (
 --
 
 INSERT INTO `baykeshop_baykearticlecategory` (`id`, `add_date`, `pub_date`, `is_del`, `name`, `icon`, `desc`, `keywords`, `site_id`) VALUES
-(2, '2023-05-28 14:14:38.784421', '2023-05-28 14:14:38.784421', 0, '試閱', '', '', '', NULL);
+(2, '2023-05-28 14:14:38.784421', '2023-05-28 14:14:38.784421', 0, '試閱', '', '', '', NULL),
+(3, '2023-05-29 13:04:28.356969', '2023-05-29 13:04:28.356969', 0, '心得', '', '', '', NULL);
 
 -- --------------------------------------------------------
 
@@ -328,7 +330,10 @@ CREATE TABLE `baykeshop_baykearticletag` (
 --
 
 INSERT INTO `baykeshop_baykearticletag` (`id`, `add_date`, `pub_date`, `is_del`, `name`, `site_id`) VALUES
-(1, '2023-05-15 12:19:55.828000', '2023-05-15 12:19:55.828000', 0, '購物', NULL);
+(1, '2023-05-15 12:19:55.828000', '2023-05-15 12:19:55.828000', 0, '購物', NULL),
+(2, '2023-05-29 12:53:04.437920', '2023-05-29 12:53:04.437920', 0, '試閱', NULL),
+(3, '2023-05-29 13:04:19.448320', '2023-05-29 13:04:19.449318', 0, '心得', NULL),
+(4, '2023-05-29 13:05:11.019051', '2023-05-29 13:05:11.019051', 0, '推しの子', NULL);
 
 -- --------------------------------------------------------
 
@@ -347,7 +352,8 @@ CREATE TABLE `baykeshop_baykearticle_tags` (
 --
 
 INSERT INTO `baykeshop_baykearticle_tags` (`id`, `baykearticle_id`, `baykearticletag_id`) VALUES
-(3, 3, 1);
+(4, 3, 2),
+(5, 4, 4);
 
 -- --------------------------------------------------------
 
@@ -907,7 +913,29 @@ INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`,
 (28, '2023-05-28 14:20:22.041112', '8', '漫畫', 2, '[{\"changed\": {\"fields\": [\"\\u63a8\\u8350\\u56fe\"]}}]', 11, 1),
 (29, '2023-05-28 14:21:30.333549', '8', '漫畫', 2, '[{\"changed\": {\"fields\": [\"\\u63a8\\u8350\\u56fe\"]}}]', 11, 1),
 (30, '2023-05-28 14:23:28.265367', '1', '商品资讯', 3, '', 28, 1),
-(31, '2023-05-28 14:27:46.346351', '3', '【推しの子】 7', 1, '[{\"added\": {}}]', 29, 1);
+(31, '2023-05-28 14:27:46.346351', '3', '【推しの子】 7', 1, '[{\"added\": {}}]', 29, 1),
+(32, '2023-05-29 12:53:04.438917', '2', '試閱', 1, '[{\"added\": {}}]', 27, 1),
+(33, '2023-05-29 12:53:20.808138', '3', '【推しの子】 7', 2, '[{\"changed\": {\"fields\": [\"\\u63cf\\u8ff0\"]}}]', 29, 1),
+(34, '2023-05-29 12:53:24.792823', '3', '【推しの子】 7', 2, '[{\"changed\": {\"fields\": [\"\\u63cf\\u8ff0\", \"\\u6807\\u7b7e\"]}}]', 29, 1),
+(35, '2023-05-29 12:55:08.494527', '2', 'openshop.sparrowten.com', 1, '[{\"added\": {}}]', 7, 1),
+(36, '2023-05-29 12:57:52.965836', '1', '/about/ -- 關於我們', 2, '[{\"changed\": {\"fields\": [\"Content\", \"Sites\"]}}]', 8, 1),
+(37, '2023-05-29 12:58:06.941279', '2', '/faq/after/ -- 售後服務', 2, '[{\"changed\": {\"fields\": [\"Title\", \"Content\"]}}]', 8, 1),
+(38, '2023-05-29 12:58:10.362507', '2', '/faq/after/ -- 售後服務', 2, '[{\"changed\": {\"fields\": [\"Sites\"]}}]', 8, 1),
+(39, '2023-05-29 12:58:24.188870', '3', '/faq/pay/ -- 付款問題', 2, '[{\"changed\": {\"fields\": [\"Content\"]}}]', 8, 1),
+(40, '2023-05-29 12:58:44.547717', '4', '/newbie/flow/ -- 購物流程', 2, '[{\"changed\": {\"fields\": [\"Content\", \"Sites\"]}}]', 8, 1),
+(41, '2023-05-29 12:58:52.429643', '5', '/newbie/payment/ -- 付款方式', 2, '[{\"changed\": {\"fields\": [\"Content\", \"Sites\"]}}]', 8, 1),
+(42, '2023-05-29 12:58:59.496207', '6', '/serve/refund/ -- 退款流程', 2, '[{\"changed\": {\"fields\": [\"Content\", \"Sites\"]}}]', 8, 1),
+(43, '2023-05-29 12:59:09.274686', '7', '/serve/return/ -- 退貨流程', 2, '[{\"changed\": {\"fields\": [\"Content\", \"Sites\"]}}]', 8, 1),
+(44, '2023-05-29 12:59:40.503559', '1', '/about/ -- 關於我們', 2, '[{\"changed\": {\"fields\": [\"Sites\"]}}]', 8, 1),
+(45, '2023-05-29 12:59:45.186568', '2', '/faq/after/ -- 售後服務', 2, '[{\"changed\": {\"fields\": [\"Sites\"]}}]', 8, 1),
+(46, '2023-05-29 12:59:49.093039', '4', '/newbie/flow/ -- 購物流程', 2, '[{\"changed\": {\"fields\": [\"Sites\"]}}]', 8, 1),
+(47, '2023-05-29 12:59:54.995609', '5', '/newbie/payment/ -- 付款方式', 2, '[{\"changed\": {\"fields\": [\"Sites\"]}}]', 8, 1),
+(48, '2023-05-29 12:59:58.703682', '6', '/serve/refund/ -- 退款流程', 2, '[{\"changed\": {\"fields\": [\"Sites\"]}}]', 8, 1),
+(49, '2023-05-29 13:00:01.589261', '7', '/serve/return/ -- 退貨流程', 2, '[{\"changed\": {\"fields\": [\"Sites\"]}}]', 8, 1),
+(50, '2023-05-29 13:04:19.449318', '3', '心得', 1, '[{\"added\": {}}]', 27, 1),
+(51, '2023-05-29 13:04:28.357968', '3', '心得', 1, '[{\"added\": {}}]', 28, 1),
+(52, '2023-05-29 13:05:11.021050', '4', '推しの子', 1, '[{\"added\": {}}]', 27, 1),
+(53, '2023-05-29 13:05:16.666009', '4', '【心得】第40話前後一些有趣的細節(有雷)', 1, '[{\"added\": {}}]', 29, 1);
 
 -- --------------------------------------------------------
 
@@ -978,13 +1006,13 @@ CREATE TABLE `django_flatpage` (
 --
 
 INSERT INTO `django_flatpage` (`id`, `url`, `title`, `content`, `enable_comments`, `template_name`, `registration_required`) VALUES
-(1, '/about/', '關於我們', '<p>关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们</p>\r\n<p><img src=\"../../../../../media/upload/1d57cdf6b26a4c2d8a9d6664156ce279.jpg\" alt=\"\" width=\"800\" height=\"800\"></p>', 0, '', 0),
-(2, '/faq/after/', '售後說明', '售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明', 0, '', 0),
-(3, '/faq/pay/', '付款問題', '支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题支付问题', 0, '', 0),
-(4, '/newbie/flow/', '購物流程', '购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程购物流程', 0, '', 0),
-(5, '/newbie/payment/', '付款方式', '支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式', 0, '', 0),
-(6, '/serve/refund/', '退款流程', '退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程退款流程', 0, '', 0),
-(7, '/serve/return/', '退貨流程', '退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策退货政策', 0, '', 0);
+(1, '/about/', '關於我們', '<p>OpenShop 是一個以開放論壇式的商城平台，就如名字中的「Open」，用戶可以在這裡以貼文來分享自己對於這本書籍的感想，如果有興趣的話也提供試閱服務，試閱後也可以直接購買完整內容享受！</p>', 0, '', 0),
+(2, '/faq/after/', '售後服務', '<p>售後服務</p>', 0, '', 0),
+(3, '/faq/pay/', '付款問題', '<p>付款問題</p>', 0, '', 0),
+(4, '/newbie/flow/', '購物流程', '<p>購物流程</p>', 0, '', 0),
+(5, '/newbie/payment/', '付款方式', '<p>付款方式</p>', 0, '', 0),
+(6, '/serve/refund/', '退款流程', '<p>退款流程</p>', 0, '', 0),
+(7, '/serve/return/', '退貨流程', '<p>退貨流程</p>', 0, '', 0);
 
 -- --------------------------------------------------------
 
@@ -1003,13 +1031,13 @@ CREATE TABLE `django_flatpage_sites` (
 --
 
 INSERT INTO `django_flatpage_sites` (`id`, `flatpage_id`, `site_id`) VALUES
-(1, 1, 1),
-(2, 2, 1),
+(14, 1, 1),
+(15, 2, 1),
 (3, 3, 1),
-(4, 4, 1),
-(5, 5, 1),
-(6, 6, 1),
-(7, 7, 1);
+(16, 4, 1),
+(17, 5, 1),
+(18, 6, 1),
+(19, 7, 1);
 
 -- --------------------------------------------------------
 
@@ -1069,6 +1097,7 @@ CREATE TABLE `django_session` (
 --
 
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
+('cnitmwpuy7kubn35oq2k2ml1lkdkp2ym', '.eJxVjEEOwiAQRe_C2hCwZaAu3fcMzcDMSNVAUtqV8e7apAvd_vfef6kJtzVPW-NlmkldlFWn3y1ienDZAd2x3KpOtazLHPWu6IM2PVbi5_Vw_w4ytvytGc4AQYJxEYMznY0CxvGQmJg6a6RH8TCA90BJwILFECR5pii-T1G9P-OhOH0:1q3cMk:2FUVT88LGEIfiVYdsmmz7vEw_MLaEGjuMTYWIIwVR_A', '2023-06-12 12:52:50.363127'),
 ('tszjdt89v1wlty0mt085krqgqvjeqvwf', '.eJxVjEEOwiAQRe_C2hCwZaAu3fcMzcDMSNVAUtqV8e7apAvd_vfef6kJtzVPW-NlmkldlFWn3y1ienDZAd2x3KpOtazLHPWu6IM2PVbi5_Vw_w4ytvytGc4AQYJxEYMznY0CxvGQmJg6a6RH8TCA90BJwILFECR5pii-T1G9P-OhOH0:1q2viz:k3sD6_Q6Nv8i0tf6pJ1W_fb7xSS7wkjRCYWA8bI-Xhk', '2023-06-10 15:20:57.966507');
 
 -- --------------------------------------------------------
@@ -1088,7 +1117,8 @@ CREATE TABLE `django_site` (
 --
 
 INSERT INTO `django_site` (`id`, `domain`, `name`) VALUES
-(1, 'example.com', 'example.com');
+(1, 'example.com', 'example.com'),
+(2, 'openshop.sparrowten.com', 'openshop.sparrowten.com');
 
 --
 -- 已傾印資料表的索引
@@ -1442,25 +1472,25 @@ ALTER TABLE `baykeshop_baykeaddress`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykearticle`
 --
 ALTER TABLE `baykeshop_baykearticle`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykearticlecategory`
 --
 ALTER TABLE `baykeshop_baykearticlecategory`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykearticletag`
 --
 ALTER TABLE `baykeshop_baykearticletag`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykearticle_tags`
 --
 ALTER TABLE `baykeshop_baykearticle_tags`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `baykeshop_baykebanner`
@@ -1586,7 +1616,7 @@ ALTER TABLE `baykeshop_baykeverifycode`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `django_admin_log`
 --
 ALTER TABLE `django_admin_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `django_content_type`
@@ -1604,7 +1634,7 @@ ALTER TABLE `django_flatpage`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `django_flatpage_sites`
 --
 ALTER TABLE `django_flatpage_sites`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `django_migrations`
@@ -1616,7 +1646,7 @@ ALTER TABLE `django_migrations`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `django_site`
 --
 ALTER TABLE `django_site`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- 已傾印資料表的限制式

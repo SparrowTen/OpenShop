@@ -1,5 +1,7 @@
-{% extends 'baykeshop/user/menmber.html' %} {% load bayketags %} {% block title
-%} 訂單詳情 {% endblock %} {% block menmber %}
+{% extends 'baykeshop/user/menmber.html' %} {% load bayketags %} 
+{% block title%} 
+訂單詳情 
+{% endblock %} {% block menmber %}
 
 <div class="box is-radiusless is-marginless pt-6" id="orderStatus">
   <b-steps v-model="activeStep" :has-navigation="false">

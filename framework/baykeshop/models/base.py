@@ -103,10 +103,10 @@ class ProductMixin(BaseModelMixin):
 class OrderMixin(BaseModelMixin):
     """ 订单模型基类 """
     class PayMethodChoices(models.IntegerChoices):
-        CASH = 1, _('货到付款')
-        ALIPAY = 2, _('支付宝')
+        CASH = 1, _('貨到付款')
+        ALIPAY = 2, _('支付寶')
         WECHATPAY = 3, _('微信支付')
-        OVERPAY = 4, _('余额支付')
+        OVERPAY = 4, _('餘額支付')
 
     class OrderStatusChoices(models.IntegerChoices):
         TOBPAY = 1, _('待支付')

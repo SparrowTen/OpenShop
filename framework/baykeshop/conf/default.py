@@ -26,7 +26,7 @@ DATABASES = {
         'NAME': 'openshop',
         'USER': 'user',
         'PASSWORD': '9239',
-        'HOST': '127.0.0.1',
+        'HOST': '192.168.100.126',
         'PORT': '3306',
         # 'OPTIONS': {
         #     'read_default_file': f'{settings.BASE_DIR}/mysql.cnf',

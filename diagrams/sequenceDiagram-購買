@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-29T15:10:35.000Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="zGW7f_d53pwvD_7ACwH8" version="21.3.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-31T16:06:54.758Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="lfKKH7VGurg_n-H8Ur4u" version="21.3.6" type="github">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="2353" dy="1291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1373" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -32,8 +32,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aM9ryv3xv72pqoxQDRHE-10" value="addBook()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1" target="wbMu4ovJZ9uJY7AkTaPc-7" source="VH_-nQBJX1-C9GJG_pdb-2">
-          <mxGeometry x="0.204" relative="1" as="geometry">
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-10" value="addBook()" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" source="VH_-nQBJX1-C9GJG_pdb-2" target="wbMu4ovJZ9uJY7AkTaPc-7" edge="1">
+          <mxGeometry x="0.0816" relative="1" as="geometry">
             <mxPoint x="1180" y="540" as="targetPoint" />
             <Array as="points">
               <mxPoint x="1110" y="560" />
@@ -93,7 +93,7 @@
         <mxCell id="wbMu4ovJZ9uJY7AkTaPc-34" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" parent="1" vertex="1">
           <mxGeometry x="900.5" y="570" width="15" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="wbMu4ovJZ9uJY7AkTaPc-36" value="&amp;lt;&amp;lt;移除購買商品&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" target="aM9ryv3xv72pqoxQDRHE-5" edge="1" source="aM9ryv3xv72pqoxQDRHE-1">
+        <mxCell id="wbMu4ovJZ9uJY7AkTaPc-36" value="&amp;lt;&amp;lt;移除購買商品&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" source="aM9ryv3xv72pqoxQDRHE-1" target="aM9ryv3xv72pqoxQDRHE-5" edge="1">
           <mxGeometry y="10" width="160" relative="1" as="geometry">
             <mxPoint x="657.810344827586" y="554.9000000000001" as="sourcePoint" />
             <mxPoint x="828" y="559.86" as="targetPoint" />
@@ -143,7 +143,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VH_-nQBJX1-C9GJG_pdb-1" value="return price" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="aM9ryv3xv72pqoxQDRHE-5" target="aM9ryv3xv72pqoxQDRHE-1">
+        <mxCell id="VH_-nQBJX1-C9GJG_pdb-1" value="return price" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" source="aM9ryv3xv72pqoxQDRHE-5" target="aM9ryv3xv72pqoxQDRHE-1" edge="1">
           <mxGeometry x="0.0218" relative="1" as="geometry">
             <mxPoint x="1055.5" y="459.43" as="targetPoint" />
             <Array as="points">
@@ -154,10 +154,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VH_-nQBJX1-C9GJG_pdb-2" value=":ownEbook" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+        <mxCell id="VH_-nQBJX1-C9GJG_pdb-2" value=":ownEbook" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
           <mxGeometry x="990" y="250" width="100" height="330" as="geometry" />
         </mxCell>
-        <mxCell id="VH_-nQBJX1-C9GJG_pdb-3" value="&amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" edge="1" parent="1" source="aM9ryv3xv72pqoxQDRHE-5" target="VH_-nQBJX1-C9GJG_pdb-2">
+        <mxCell id="VH_-nQBJX1-C9GJG_pdb-3" value="&amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" source="aM9ryv3xv72pqoxQDRHE-5" target="VH_-nQBJX1-C9GJG_pdb-2" edge="1">
           <mxGeometry y="10" relative="1" as="geometry">
             <mxPoint x="915.5" y="515" as="sourcePoint" />
             <Array as="points">
@@ -172,7 +172,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VH_-nQBJX1-C9GJG_pdb-5" value="買書" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+        <mxCell id="VH_-nQBJX1-C9GJG_pdb-5" value="買書" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="50" width="1600" height="990" as="geometry" />
         </mxCell>
       </root>

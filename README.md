@@ -10,8 +10,13 @@ python -m venv venv
 ```
 
 #### 啟動虛擬環境
+Windows
 ```
 .\venv\Scripts\Activate.ps1
+```
+linux
+```
+. venv/bin/activate
 ```
 
 #### 安裝套件
@@ -66,4 +71,16 @@ DATABASES = {
 #### 創建超級使用者
 ```
 python manage.py createsuperuser
+```
+
+## Docker
+
+### 建立 image
+```
+docker image build -t openshop .
+```
+
+### 建立並啟動 Container
+```
+docker run -d -p 80:80 --name OpenShop openshop
 ```
